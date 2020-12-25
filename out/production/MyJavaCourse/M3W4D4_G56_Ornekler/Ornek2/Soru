@@ -1,0 +1,95 @@
+
+abstract classlardan classlara extends ile bag kurulur.
+
+abstract --- extends--->> class
+
+public abstract void yiyecegi();     metodu böyle yazılır.
+
+
+
+
+
+
+
+Hayvan(){
+    sayac++;
+   }  ******************************************************************                                                                  Kartal(){
+
+        kartalSayac++;
+        setId(getSayac());
+
+    }  ******************************************************************                                                               Kedi(){
+
+     kediSayac++;
+     setId(getSayac());
+
+ ------------------------------------------------------------
+
+ class Hayvan{
+     private static int sayac;
+     private int id = ++sayac;
+
+     public int getId() {
+         return id;
+     }
+
+     public static int getSayac() {
+         return sayac;
+     }
+ }
+
+ class Kedi extends Hayvan{
+     private static int kediSayac;
+     private int id = ++kediSayac;
+
+     public int getId() {
+         return id;
+     }
+ }
+
+ class Kartal extends Hayvan{
+     private static int kartalSayac;
+     private int id = ++kartalSayac;
+
+     public int getId() {
+         return id;
+     }
+ }
+
+
+ public class Hayvanlar {
+
+
+     public static void main(String[] args) {
+         for (int i=0; i<10; i++) {
+             Hayvan kedi = new Kedi();
+             System.out.println("Hayvan : " + Hayvan.getSayac() + ", "
+                     + kedi.getClass().getSimpleName() + " : " + kedi.getId());
+         }
+         for (int i=0; i<10; i++) {
+             Hayvan kartal = new Kartal();
+             System.out.println("Hayvan : " + Hayvan.getSayac() + ", "
+                     + kartal.getClass().getSimpleName() + " : " + kartal.getId());
+         }
+
+     }
+ }
+ -------------------------------
+
+ class Hayvan{
+     private static int sayac;
+     private int id = ++sayac;
+
+ }
+
+ class Kedi extends Hayvan{
+     private static int kediSayac;
+     private int id = ++kediSayac;
+
+ }
+
+ class Kartal extends Hayvan{
+     private static int kartalSayac;
+     private int id = ++kartalSayac;
+
+ }

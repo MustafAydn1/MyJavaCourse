@@ -1,0 +1,194 @@
+
+extends ile ---->>bağ kur ve aktar.
+
+***************************************************************************************************
+
+implements ile--->> verilenleri uygula.
+ interface--- extends--->> interface
+ interface--- implements--->> class
+******************************************************************************************************
+
+abstract ile --->> hem bag kur ve aktar hemde uygula...
+
+*****************************************************************************************************
+CodingBat...
+
+*****************************************************************************************************
+java tekrar::::
+g20---
+method Overloading feature::
+NUMBERS   different
+dataTypes  difference
+Order TYPES change
+
+Main metodu static oldugu için metodlarıda main metodunda direk ismiyle capırmak için
+static yapmalıyız. static yapmazsan class adıyla nesne olusturup öyle cagırırsın(doğru mu? bak)
+
+static olmayan metodu static metodda cagırabılırsın. bunu incele..
+
+Varargs ın acılımını ögren
+Varargs da object... things desem her type de veri için kullanabılır mıyım?
+Kabul etti ama kullanım alanlarını doğru secelim.
+
+g3-task3 de;
+Varargs Strings ise string  arraylarden oluşur.int içinde öylemi... EVET...TASK4 DE.
+HİÇ DEGER GİRMESENDE HATA VERMEZ.
+int dolt(int a, int b, double c, int ...vals, double ..morevals)//Hata!
+iki tane VArargs kullanmaya izin vermıyor.
+Daima en sona kullanacaksın.
+
+NaN: means "Not a number." It's a special floating point value that means
+that the result of an operation was not defined or not representable as a real number.
+
+Wrapper:: sarmak demek.
+
+Integer object'tir....int degil... buna bak.
+buyuk harfle baslayanlar :: object ....int...byte
+kucuk harfle başlayanlar :: primitive...Integer...Byte
+<>:daymınt parantez denıyor.
+
+ArrayList::
+Arraylist buyuk harfli WrapperClass ları alır.. ArrayList<Integer> ... şeklinde..
+length:: Array in uzunluğunu
+size:: ArrayList uzunlugunu verir.
+
+names.indexof ile sordugun elemanın indexini verir...
+names.clear ile tum list boşalır.
+
+autoboxing:: primitive ---> Wrapper...... otomatik paketleme
+Unboxing:: Wrapper ---> primitive..... kendimiz yapacaz.
+buna bak???
+
+Kutudan cikarmak, yada kutunun icine koymak gibi...
+
+list1.removeAll.list2 ---> list1 in içinden list2 yi çıkar...kesişimi cıkar.
+shift f6
+************************************************************************************
+g-23
+hash:: karışık-karma demek
+collection sınıfının(arrayList-set-map) variables Wrapper dır.Integer dır. int degil
+
+set.toArray(arrays) :: seti array a cevirir... toArray   METODU....
+task2 de:: bir metodun sonucu boolean olarak istenıyorsa::
+           return da verilen durum daima true dur.true cıktı verir.
+           o durumu saglamıyorsa false döndurur.cıktıya false verir.
+
+
+taskları incele cok guzel....
+
+Set<Integer> hsKesisim= new HashSet<>(hs1); // hs1 den kopya oluşturdum.// BUNU YAPMAK ZORUNDA.BAŞKA YOLU YOK.
+        hsKesisim.retainAll(hs2); // hs1 ile hs 2 nin kesişimi bulundu
+        System.out.println("hsKesisim = " + hsKesisim); // Ortak elemanlar bulundu
+
+        bu kopyalama ile hs1 korunmuş oldu. yoksa degişiyor.!!!!
+*************************************************************************
+g-25
+map.keySet()...keys
+map.values()... values
+    for(Map.Entry<Integer,Integer> AnahtarVeDeger: map.entrySet()){// key ve value nin tamamı için...ilki E, ikinci enrtry
+    for(Map.Entry<Integer,Integer> KeyAndValue: map.entrySet())
+
+    Map.Entry<Integer,Integer> AnahtarVeDeger= map.entrySet();
+    bunu yazmayı bılmıyorsan, OTOMATIK YAZMAK İÇİN,
+    map.entrySet(); yaz sonra NEYE TIKLAYACAKTIK??
+
+    check diyorsa boolean type return olacak
+
+******************************************************************************
+
+gun 28 deki
+
+instance variable be stattic olmayan metod:: instance dir. e dikkat et ...ex1 de..
+***********************************************************************************
+
+g 30
+this neden var...
+this --> class instance'ini refere eder
+degisken isimleri ayni oldugunda karisikligi ortadan kaldirmak icin this ifadesi kullaniliyor.
+Ama fields ismi ile parametre ismi ayni olunca this kullanmamizi istiyor.
+degısken ısımlerı aynı olunca karısmaması ıcın.
+
+Aynı classın içindeki this için,
+mesela bı odadasınız bişeyden  bahsediyorsunuz ve ortada duruyorsa bu dediğiniz ile  anlattıgınız aynı şey olur.
+bu yuzden aynı sayfada this.name=name aynı şey oluyor.
+
+Neden constructor oluşturulur?
+hocam constructor ı şu durumlarda kullanacagız diye bir sınıflandırma yada anlayış var mı?
+
+CEVAP1:Obje olustururken bir kritere gore doldurulmasini istiyorsak, eksik bilgi olmasini istemiyorsak ona gore Constructor ayarlanmis oluyor  @Mustafa Aydın
+default degerleri
+CEVAP2:: BİR FABRİKA ARABA ÜRETİRKEN , modellerinde kullanacagı özellikleri belirtir ve hep o özelliklerde uretir.
+bunu constructorla saglar.
+Ama uretimi başkalarına bırakcaksa constructor koymaz kendi özelliklerini kendisi yapar.
+mesela müsteri  kendi itegine göre arac isterse, fabrika sadece  boş konstructor kullanır.
+içini müsteri isteklerine göre doldurur.boş constrctr da bunun için yapılır.
+overload contrucor da da musteriye ben hazır araba formatları yaptım. sen git birini doldur.
+musteriye kolaylık saglandı
+
+boş constroctur--> c
+
+Assert te...
+method ile  yapılan işlem actual olan oluyor... Alan hesabında...
+verileri kullanarak benim kafadan hesapladıgım sonuc,expected  oluyor.
+
+ctrl tusu ile java nın sınıflarının/metodlarının işleyişi gör daha iyi anla.. assert i incelemek gibi..
+
+g30--task1--Bank daki 2. ve 3. constructor a dikkat..
+this(name,serial); bi önceki constructoru refer ettik.
+Ayni constuctor u cagirip ona bir parametre daha eklemis olduk.
+this(name,serial); ile içiçe metod gibi kullandık.
+this demek bulundugun  sınıfı temsil eder. burada this Bank i temsil eder.
+
+boolean nın default degeri:: false dir.
+
+arraylist array a  şoyle de cevrillir.
+array=arraylist.toArray(array) ile cevrilir.
+
+*******************************************************************
+g-31
+default:: private package dır
+protected ı genişleten child ları
+public--> protected--> default--> prıvate
+önunde herhangi bir access mofiers yoksa defaulttur.
+
+mesela tc, hesap no, isimleri ekranda farklı cıkarmak istersen;private tanımla...
+split("") ayır. her harf ve sayıyı başka karakterlere ata ve öylece cıktı ver.
+public get seti böyle ayarla...
+
+static private olur mu? EVET olur.
+Statik bir üyeden statik olmayan bir üyeye erişemezsiniz.!
+static üyeler sınıf üyeleridir ve o sınıfın tüm örnekleri arasında paylaşılır.!
+Bir şeyin bir sınıfın tüm örnekleri tarafından paylaşılması mantıklıysa, onu statik hale getirin!
+**************************************************************************************************
+
+g32
+static olan attrıbutes and metods class a aittir. object den ziyade..
+
+finall atrıbute,fields ilk deger den sonra değişmez.
+ilk degeri olmaksızın sadece costructor durumunda oluşumuna izin verir.
+
+Ama array olursa içinin tamamını bile değiştirirsiniz.
+Fakat arrayi başka bi array a atamazsın
+
+final list in içine bişey yazmadan constructorsuz da  tanımlarsın.
+içine deger atadıgın anda artık listi başka bi liste atayamazsın.
+
+final static de yazılır.
+static final de yazılır.
+
+java da println ile 0124 gibi yazınca  octal number:: 8 lik sayı sıstemi oluyor.
+
+4*1=4
+2*8=16
+1*88=88
+0*888=0   ın toplamını verir.
+***********************************************************************************
+g33
+enum ların constrocturları private oluyor, default olarak..
+
+g33-->   -->sample clasında
+(string[] args)
+Run ---> Edit Configuration -->> program arguments in içine degerler girebilirisin.
+aralarına bır boşluk bırakacak şekilde apply ve ok.
+
+tarihleri yazarken mm yazma MM ile yaz.minute ile mounth u karıstırıyor.

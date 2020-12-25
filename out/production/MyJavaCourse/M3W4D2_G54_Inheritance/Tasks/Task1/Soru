@@ -1,0 +1,27 @@
+
+Ekteki Tasarıma göre gerekli modülleri yazınız.
+Sonra bir main metodunda, TeslaCar dan, ToyotaPirus dan ve cityBus dan
+birer nesne üretiniz.
+
+- ürettiğiniz nesneleri bir ArrayListe ekletip, daha sonra bu ArrayList i
+bir döngü ile classname lerini ekrana yazdırınız.
+
+
+
+
+//İNTERFACE DE  gövdeli metod olmaz. Ama SADECE default ve static erişimleri ile olur.
+//interface de fields olmaz ama final-static fields eklenebiliyordu.ekledik.
+
+
+//VEHİCLE den extends oldu.... IElectric ve IGas dan implement.
+//yazılımı ve sırası aynen böyle.önce extends,
+//sonra 1 tane implements yazılır, sonra interfaceler class adlarını yaz.
+//ToyotaPrius extends Vehicle implements IElectric,IGas
+
+
+Yöntem:
+System.out.println("Aracların Class ı= "+arac.getClass().getSimpleName());
+System.out.println("SuperClass ı= "+arac.getClass().getSuperclass());
+
+class name ögrenmek için.
+instanceof a alternatif uygulama...
